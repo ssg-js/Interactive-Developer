@@ -14,3 +14,45 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.global-width {
+	max-width: 620px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.graphic-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s
+}
+.visible {
+	opacity: 1;
+}
+.scroll-graphic {
+	position: sticky;
+	/* sticky의 위치에 top에 닿으면 이동하지 않음 */
+	top: 0;
+	/* sticky는 높이를 따로 차지하지않기 때문에 높이 지정 */
+	height: 100vh;
+}
+.scene-img {
+	max-height: 100vh;
+}
+.scroll-text {
+	/* positino의 기본값은 static, static이 아니면 html순서에 맞춰 z-index 부여*/
+	position: relative;
+}
+.step {
+	/* vh: 현재 창사이즈에 비해서 */
+	margin-bottom: 60vh;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
