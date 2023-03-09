@@ -96,7 +96,7 @@
     // 이벤트 리스너 마지막 세번째 옵션(버블링 처리 -> 보통 생략) 참조 : https://chlolisher.tistory.com/22 
     window.addEventListener('load', () => {
         // scrollTo는 시간지연을 줘야 잘 작동함
-        setTimer(() => scrollTo(0, 0), 100);
+        setTimeout(() => scrollTo(0, 0), 100);
     });
 
     // 첫 item도 보이도록
