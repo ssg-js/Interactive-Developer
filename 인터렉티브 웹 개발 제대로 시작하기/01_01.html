@@ -10,6 +10,7 @@ transform
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +20,18 @@ transform
         .box-container {
             display: flex;
         }
+
         .box {
             width: 100px;
             height: 100px;
             border: 2px solid black;
             background: rgba(255, 255, 0, 0.7);
+            /* 
+            transition 쓰기
+            */
+            transition: 1s;
         }
+
         .box:hover {
             /* width, heigth를 건드리면 전체페이지를 리로드하면서 다른 요소를 밀어냄 */
             /* width: 200px;
@@ -46,11 +53,18 @@ transform
         }
     </style>
 </head>
+
 <body>
     <h1>CSS Transform</h1>
     <!-- lorem100 : lorem 100자 소환 -->
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius repellendus vitae magnam quod, debitis odit fugit possimus rerum! Nesciunt distinctio harum praesentium facilis! Eos culpa, eaque repellendus sunt facere beatae commodi, quisquam officia earum cum corrupti sit fuga possimus laboriosam adipisci ad unde quibusdam, temporibus doloremque reprehenderit eius rerum nobis eum esse? Incidunt eveniet aspernatur facilis? Hic mollitia minus corporis exercitationem nesciunt reprehenderit quis modi explicabo cum veniam possimus asperiores eaque nihil, minima impedit doloribus! Quibusdam maiores debitis, sapiente fuga temporibus illo quis dicta! Possimus dolor quibusdam eaque obcaecati eius totam maiores deserunt at, numquam, temporibus aperiam necessitatibus odit sit!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius repellendus vitae magnam quod, debitis odit fugit
+        possimus rerum! Nesciunt distinctio harum praesentium facilis! Eos culpa, eaque repellendus sunt facere beatae
+        commodi, quisquam officia earum cum corrupti sit fuga possimus laboriosam adipisci ad unde quibusdam, temporibus
+        doloremque reprehenderit eius rerum nobis eum esse? Incidunt eveniet aspernatur facilis? Hic mollitia minus
+        corporis exercitationem nesciunt reprehenderit quis modi explicabo cum veniam possimus asperiores eaque nihil,
+        minima impedit doloribus! Quibusdam maiores debitis, sapiente fuga temporibus illo quis dicta! Possimus dolor
+        quibusdam eaque obcaecati eius totam maiores deserunt at, numquam, temporibus aperiam necessitatibus odit sit!
     </p>
     <div class="box-container">
         <div class="box">A</div>
@@ -60,7 +74,14 @@ transform
         <div class="box">E</div>
     </div>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolor eius, ab eos voluptate quia odio nam facilis obcaecati tempora. Nisi quae labore consequuntur amet beatae unde eaque sint repellendus. Fuga voluptas minima, maiores neque enim vitae quaerat rerum repudiandae a dolores ab quis? Recusandae iusto consequuntur, facere voluptates temporibus reprehenderit, labore debitis porro repudiandae libero harum. Dolore praesentium eos excepturi nisi labore, assumenda deserunt cupiditate iusto unde porro ex debitis doloribus vero modi aut fugit, vitae consequatur numquam rerum tempore nobis maxime reprehenderit minima sapiente. Ipsa quo velit unde modi enim praesentium consequuntur deserunt, ipsum magni, recusandae, perspiciatis cumque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolor eius, ab eos voluptate quia odio nam
+        facilis obcaecati tempora. Nisi quae labore consequuntur amet beatae unde eaque sint repellendus. Fuga voluptas
+        minima, maiores neque enim vitae quaerat rerum repudiandae a dolores ab quis? Recusandae iusto consequuntur,
+        facere voluptates temporibus reprehenderit, labore debitis porro repudiandae libero harum. Dolore praesentium
+        eos excepturi nisi labore, assumenda deserunt cupiditate iusto unde porro ex debitis doloribus vero modi aut
+        fugit, vitae consequatur numquam rerum tempore nobis maxime reprehenderit minima sapiente. Ipsa quo velit unde
+        modi enim praesentium consequuntur deserunt, ipsum magni, recusandae, perspiciatis cumque!
     </p>
 </body>
+
 </html>
