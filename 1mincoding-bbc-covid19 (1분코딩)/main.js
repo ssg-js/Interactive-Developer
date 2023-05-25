@@ -60,7 +60,7 @@
             actions[action](false);
         }
     }
-
+    console.log(window);
     // eventHandler는 간단하면 좋음 -> activate, inactivate 만들기
     window.addEventListener('scroll', () => {
         let step;
